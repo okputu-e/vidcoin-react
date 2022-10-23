@@ -1,0 +1,13 @@
+Color code used : 
+FFFFFF(100%), 
+4D8AF0 (100%), 
+47A8C8 (100%), 
+5C60C4 (100%), 
+6152C6 (100%), 
+F2A900 (60%), 
+6C63FF (100%), 
+F2A900 (100%), 
+000000 (40%), 
+C4C4C4 (100%), 
+547BC0 (100%), 
+5F4FCB (100%) this is a breakdown of the color code with opacity.

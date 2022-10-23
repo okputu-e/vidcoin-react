@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { Globals } from "./components/styled/Globals.styled";
+import { theme } from "./components/styled/Theme.styled";
+import Header from "./components/sections/Header";
+import UseVidcoin from "./components/sections/UseVidcoin";
+import ChooseVidcoin from "./components/sections/ChooseVidcoin";
+import Instructions from "./components/sections/Instructions";
+import News from "./components/sections/News";
+import OurExperts from "./components/sections/OurExperts";
+import Footer from "./components/sections/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Globals />
+      <Header />
+      <UseVidcoin />
+      <ChooseVidcoin />
+      <Instructions />
+      <OurExperts />
+      <News />
+      <Footer />
+    </ThemeProvider>
   );
 }
-
-export default App;
