@@ -6,6 +6,7 @@ import { UnorderList } from "../styled/UnorderList.styled";
 import { Hero } from "../styled/Hero.styled";
 import { Button } from "../styled/Button.styled";
 import HeroImg from "../../assets/svg/7898564_play_bookmarks_icon 1.svg";
+import { Hamburger } from "../helpers/Harmburger";
 
 const lists = [
   { id: 1, item: "Sell" },
@@ -16,6 +17,12 @@ const lists = [
 ];
 
 export default function Header() {
+  const [isOpen, setisOpen] = React.useState(false);
+
+  function handleClick() {
+    setisOpen((prev) => !prev);
+  }
+
   const NavList = lists.map((list) => {
     return (
       <li key={list.id}>
@@ -23,6 +30,7 @@ export default function Header() {
       </li>
     );
   });
+
   return (
     <StyledHeader>
       <Container>
@@ -32,7 +40,8 @@ export default function Header() {
               Vid<span>Coin</span>
             </Logo>
           </div>
-          <UnorderList>{NavList}</UnorderList>
+          <Hamburger open={isOpen} handleClick={handleClick} />
+          <UnorderList open={isOpen}>{NavList}</UnorderList>
         </Nav>
         <Hero>
           <div>

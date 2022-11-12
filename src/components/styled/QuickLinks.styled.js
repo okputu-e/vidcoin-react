@@ -18,6 +18,15 @@ export const StyledQuickLinks = styled.div`
       color: white;
       font-weight: 600;
       font-size: 18px;
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        margin: 0.5rem 0;
+      }
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 `;

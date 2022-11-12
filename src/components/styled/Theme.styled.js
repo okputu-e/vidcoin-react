@@ -6,4 +6,9 @@ export const theme = {
     logo: "#f2a900",
     body: "linear-gradient(135deg, #547bc0 0%, #5f4fcb 100%)",
   },
+  breakpoints: {
+    mobile: "768px",
+    smobile: "600px",
+    esmall: "375px",
+  },
 };

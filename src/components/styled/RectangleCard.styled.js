@@ -30,14 +30,27 @@ export const StyledRectangleCard = styled.div`
   section {
     width: calc(100% - 6rem);
     margin-left: 2rem;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smobile}) {
+      margin-left: 0;
+    }
 
     h3 {
       font-size: 28px;
       margin-bottom: ${({ name }) => (name ? "2rem" : "0.5rem")};
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.smobile}) {
+        font-size: 20px;
+        margin: 1rem 0;
+      }
     }
 
     a {
       color: ${({ theme }) => theme.colors.text};
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.smobile}) {
+    flex-direction: column;
+    text-align: center;
   }
 `;

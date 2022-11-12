@@ -2,13 +2,22 @@ import styled from "styled-components";
 import { UpAndDown } from "./Animate.styled";
 
 export const StyledHeader = styled.header`
-  padding: 2rem 0;
+  padding: 1rem 0 2rem;
 `;
 
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & > div {
+    &:nth-child(1) {
+      z-index: 10;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  }
 `;
 
 export const Image = styled.img`

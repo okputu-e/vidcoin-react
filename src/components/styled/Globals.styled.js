@@ -5,10 +5,7 @@ export const Globals = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        
     }
-
-   
 
     html{
         font-size: 100%;
@@ -27,4 +24,5 @@ export const Globals = createGlobalStyle`
     img{
         max-width: 100%;
     }
+
 `;

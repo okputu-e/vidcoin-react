@@ -17,14 +17,13 @@ export const StyledSocialIcons = styled.ul`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2rem;
-    height: 5rem;
-    width: 5rem;
+    padding: 1rem;
+    margin: 0.5rem;
     text-decoration: none;
 
     svg {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2rem;
+      height: 2rem;
     }
   }
 `;
